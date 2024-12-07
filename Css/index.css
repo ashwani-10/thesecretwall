@@ -139,6 +139,7 @@ body {
     border-radius: 5px;
     background-color: purple;
     color: white;
+    cursor: pointer;
 }
 
 
