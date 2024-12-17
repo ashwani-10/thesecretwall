@@ -6,6 +6,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Just+Me+Again+Down+Here&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:wght@100&family=Sour+Gummy:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Castoro+Titling&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Raleway:wght@500&display=swap"
     rel="stylesheet">
@@ -30,6 +32,22 @@
   <button class="add_button" id="add-button">speakOut</button>
   <!-- main page -->
 
+  <!-- hero-slogan -->
+  <div class="hero"">
+    <h1 id="hero-slogan">This wall listens, but have you dared to speakOut ?</h1>
+  </div>
+  <!-- hero-slogan -->
+
+ s
+  <!-- secret-container -->
+  <div class="wall">
+    <div class="card">
+      <h3>Secret Title 1</h3>
+      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id sagittis quam. Aliquam erat volutpat.</p>
+    </div>
+  </div>
+  <!-- secret-container -->
+
   <!-- post secrets popup -->
   <div class="add-form" id="form">
     <div class="form-content">
@@ -38,7 +56,7 @@
         <h3>HEY, YOU TOO! HAVE A STORY?</h3>
       </div>
       <div class="input_content">
-        <form id="myForm"action="http://localhost:8080/secrets" method="POST">
+        <form id="myForm"action="http://localhost:8080/pendingSecrets" method="POST">
           <label for="title" class="title">Title</label><br>
           <textarea type="text" maxlength="50" placeholder="give your secret a title" class="input-title" name="title"
             required id="title"></textarea><br>

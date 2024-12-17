@@ -12,11 +12,15 @@ form.addEventListener('submit', async (event) => {
     event.preventDefault();  // Prevent default form submission behavior
 
     const formData = new FormData(form);
+    const data = Object.fromEntries(formData);
 
     try {
         const response = await fetch(form.action, {
             method: 'POST',
-            body: formData,
+            headers: {
+                'Content-Type': 'application/json',  // Add Content-Type header
+            },
+            body: JSON.stringify(data),
         });
 
         if (response.ok) {
@@ -33,3 +37,24 @@ form.addEventListener('submit', async (event) => {
         alert('Error: ' + error.message);  // Handle any fetch errors
     }
 });
+
+
+// Translation object
+const translations = [
+    "यह दीवार सुनती है, लेकिन क्या आपने बोलने की हिम्मत की है ?", // Hindi
+    "ई देवाल सुनत बा, बाकिर का रउरा बोले के हिम्मत कइले बानी ?", // Bhojpuri
+    "This wall listens, but have you dared to speakOut ?" // English
+];
+
+// Get elements
+const sloganText = document.getElementById("hero-slogan");
+
+let currentIndex = 0;
+
+// Event listener for language change
+function updateSlogan(){
+    sloganText.textContent = translations[currentIndex];
+    currentIndex = (currentIndex + 1) % translations.length;
+}
+
+setInterval(updateSlogan,5000);

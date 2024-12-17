@@ -7,6 +7,7 @@ body {
     background-color: rgb(0, 0, 0);
 }
 
+/* navbar css */
 .navbar {
     display: flex;
     justify-content: center;
@@ -28,13 +29,17 @@ body {
 }
 
 .nav_title {
-    padding-top: 10px;
+    margin-top: 32px;
+    margin-left: 0;
     font-family: "Lato";
     font-size: 30px;
     color: white;
     letter-spacing: 1px;
 }
+/* navbar css ends */
 
+
+/* speakOut button css */
 .add_button {
     font-family: 'Sour Gummy';
     font-size: 25px;
@@ -54,6 +59,14 @@ body {
     
 }
 
+.add_button:hover {
+    font-size: 26px;
+  }
+/* speakOut button css ends*/
+
+
+
+/* add secret form css */
 .add-form {
     width: 100%;
     height: 100%;
@@ -79,7 +92,8 @@ body {
 
 .form_title {
     font-family: 'Sour Gummy';
-    font-size: 20px;
+    font-size: 18px;
+    margin-bottom: 10px;
     text-align: center;
     color: white;
 }
@@ -137,7 +151,7 @@ body {
     width: 150px;
     text-decoration: none;
     border-radius: 5px;
-    background-color: purple;
+    background-color: #aa01ff;
     color: white;
     cursor: pointer;
 }
@@ -166,3 +180,20 @@ body {
         opacity: 1;
     }
 }
+/* add secret form css ends */
+
+/* hero-section css */
+
+#hero-slogan{
+    margin-top: 10px;
+    margin-left: 25px;
+    color: rgb(181, 173, 173);
+    font-size: 22px;
+    font-family: 'Just+Me+Again+Down+Here', cursive;
+    font-style: normal;
+    font-weight: 400;
+    display: flex;
+    justify-self: center;
+
+}
+/* hero-section css ends*/
