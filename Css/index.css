@@ -3,12 +3,13 @@ body {
     margin: 0;
     padding: 0;
     width: 100%;
-    height: 100vh;
+    height: 100%;
     background-color: rgb(0, 0, 0);
 }
 
 /* navbar css */
 .navbar {
+    top: 0%;
     display: flex;
     justify-content: center;
     background-color: rgb(0, 0, 0);
@@ -43,18 +44,17 @@ body {
 .add_button {
     font-family: 'Sour Gummy';
     font-size: 25px;
-    position: absolute;
+    position: fixed;
     bottom: 0;
     left: 0;
     margin-bottom: 30px;
     margin-left: 30px;
     width: 100px;
     height: 45px;
-    background-color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0,0);
     color: #aa01ff;
     text-decoration-style: none;
-    border-radius: 1000px;
-    border: 1.5px solid black;
+    border: none;
     cursor: pointer;
     
 }
@@ -64,20 +64,18 @@ body {
   }
 /* speakOut button css ends*/
 
-
-
 /* add secret form css */
 .add-form {
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.7);
-    position: absolute;
+    position: fixed;
     top: 0;
-    display: flex;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(0, 0, 0,0.7);
+    display: none;
     justify-content: center;
     align-items: center;
-    display: none;
     animation: slideIn 0.3s ease-out forwards;
+    z-index: 1;
 }
 
 .close {
@@ -107,7 +105,7 @@ body {
     padding: 20px;
     position: relative;
     animation: fadeIn 0.2s ease-in-out;
-    background-color: rgba(0, 0, 0, 0.7);
+    background-color: rgba(35, 34, 34, 0.7);
     overflow: hidden;
 }
 
@@ -187,13 +185,62 @@ body {
 #hero-slogan{
     margin-top: 10px;
     margin-left: 25px;
-    color: rgb(181, 173, 173);
-    font-size: 22px;
+    padding: 10px;
+    color: rgb(255, 255, 255);
+    font-size: 30px;
     font-family: 'Just+Me+Again+Down+Here', cursive;
     font-style: normal;
     font-weight: 400;
     display: flex;
     justify-self: center;
+    overflow: hidden;
 
 }
+
+.hero {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #FF00FF; /* Magenta base text */
+    text-shadow: 
+      0 0 2.5px #aa01ff,  /* Magenta glow */
+      0 0 5px #aa01ff, 
+      0 0 10px #aa01ff, /* Deep purple outer glow */
+      0 0 20px #aa01ff; 
+  }
 /* hero-section css ends*/
+
+#data-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+
+.new-div{
+    font-family: 'Just+Me+Again+Down+Here',cursive;
+    position: static;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    font-size: 12px;
+    max-width: 800px;
+    text-align: center;
+    min-block-size: 50px;
+    color: white;
+    overflow: hidden;
+}
+
+.new-div h4{
+    font-family: "Lato";
+    color: grey;
+    font-size: 12px;
+}
+
+.new-div p{
+    margin-left: 10px;
+    margin-top: 20px;
+    color: rgb(210, 205, 205);
+    font-size: 17px;
+    text-align: justify;
+}

@@ -29,24 +29,16 @@
     </div>
   </nav>
 
-  <button class="add_button" id="add-button">speakOut</button>
   <!-- main page -->
 
   <!-- hero-slogan -->
-  <div class="hero"">
-    <h1 id="hero-slogan">This wall listens, but have you dared to speakOut ?</h1>
+  <div class="hero">
+    <h1 id="hero-slogan">This wall listens, but have you dared to speak ?</h1>
   </div>
   <!-- hero-slogan -->
+ 
 
- s
-  <!-- secret-container -->
-  <div class="wall">
-    <div class="card">
-      <h3>Secret Title 1</h3>
-      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin id sagittis quam. Aliquam erat volutpat.</p>
-    </div>
-  </div>
-  <!-- secret-container -->
+   
 
   <!-- post secrets popup -->
   <div class="add-form" id="form">
@@ -54,14 +46,11 @@
       <div class="close">+</div>
       <div class="form_title">
         <h3>HEY, YOU TOO! HAVE A STORY?</h3>
-      </div>
+      </div class="form-container">
       <div class="input_content">
         <form id="myForm"action="http://localhost:8080/pendingSecrets" method="POST">
-          <label for="title" class="title">Title</label><br>
-          <textarea type="text" maxlength="50" placeholder="give your secret a title" class="input-title" name="title"
-            required id="title"></textarea><br>
           <label for="description" class="secret">Your Secret</label><br>
-          <textarea type="text" maxlength="700" placeholder="speakOut" class="input-secret" name="description"
+          <textarea type="text" maxlength="700" placeholder="speakOut (language of your choice)" class="input-secret" name="description"
             required id="desc"></textarea><br>
           <button type="submit" class="post">Post on Wall</button>
         </form>
@@ -70,6 +59,9 @@
   </div>
   <!-- post secrets popup -->
 
+  <!-- secrets on the wall -->
+   <div id="data-container"></div>
+   <button class="add_button" id="add-button">speakOut</button>
   <script src="./javaScript/index.js">
 
   </script>
