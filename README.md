@@ -1,6 +1,6 @@
 # **thesecretwall**
 
-**"The walls listen, but have you dared to speak?"**
+**"The wall listens, but have you dared to speak?"**
 
 "thesecretwall" is an anonymous platform where users can share their deepest secrets or inner thoughts without any hesitation.
 This platform ensures that user identity remains completely private, and all posts are moderated to maintain a healthy environment.
