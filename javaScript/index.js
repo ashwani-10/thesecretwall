@@ -63,7 +63,7 @@ setInterval(updateSlogan, 5000);
 
 //fetch secrets to the wall
 function fetchSecrets (){
-fetch("http://localhost:8080/allSecrets")
+fetch("http://localhost:8080/public/allSecrets")
   .then((res) => {
     return res.json();
   })
